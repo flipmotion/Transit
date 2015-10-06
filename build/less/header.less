@@ -1,0 +1,90 @@
+.header {
+	background: @darkblue;
+	border-bottom: 4px solid @green;
+	&-lvl-1 {
+		padding: 15px 0 5px;
+		.logo {
+			margin-bottom: -60px;
+			margin-top: 10px;
+			position: relative;
+			z-index: 1;
+		}
+		.phone {
+			margin-top:5px;
+			a {
+				color: #fff;
+				text-decoration: none;
+				font-size: 18px;
+			}
+		}
+		.btn-rounded.btn-primary {
+			font-size: 15px;
+			color: @green;
+			border:2px solid @green;
+			padding: 5px 15px;
+			background: 0 0;
+			box-shadow: none;
+			&:hover,&:focus {
+				background: @green;
+				color: #fff;
+			}
+		}
+		.change-languages {
+			.icon {
+				width: 20px;
+				height: 13px;
+				text-decoration: none;
+				display: inline-block;
+				margin: 0 8px;
+				&.ru {
+					background: url(../img/ru-icon.png) center center no-repeat;
+				}
+				&.sh {
+					background: url(../img/sh-icon.png) center center no-repeat;
+				}
+				&.br {
+					background: url(../img/br-icon.png) center center no-repeat;
+					margin-right: 0;
+				}
+			}
+		}
+	}
+	&-lvl-2 {
+		padding-bottom: 15px; 
+		.navbar-nav>li {
+			margin-right: 3px;
+			&:last-child {
+				margin-right: 0;
+			}
+			&.active {
+				a {
+					background: 0 0;
+					border: 2px solid #fff;
+				}
+			}
+			&>a {
+				position: relative;
+				z-index: 2;
+				color: #fff;
+				border: 2px solid transparent;
+				border-radius: 0;
+				background: 0 0;
+				padding: 8px 15px;
+				font-size: 16px;
+
+				&:hover,&:focus {
+					background: 0 0;
+					border: 2px solid #fff;
+				}
+			}
+		}
+	}
+}
+.btn {
+	border-radius: 0;
+	.ir;
+}
+.btn-rounded {
+	background: 0 0;
+	border-width: 2px;
+}

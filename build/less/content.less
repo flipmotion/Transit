@@ -1,0 +1,163 @@
+.content {
+	&.bg-banner {
+		background: url(../img/bg-1.jpg) center center no-repeat;
+		background-size: cover;
+	}
+	&.bg-map {
+		background: url(../img/bg-2.jpg) center center no-repeat;
+		background-size: cover;
+		color: #fff;
+	}
+	&.with-padding {
+		padding: 30px 0;
+	}
+	&.grey {
+		background: #eceef0;
+	}
+	.section-title {
+		h1 {
+			margin: 30px 0;
+		}
+	}
+	.banner-item {
+		padding: 200px 0;
+		color: #fff;
+		h1 {
+			font-size: 35px;
+			color: #fff;
+		}
+		h4 {
+			font-size: 17px;
+			background: @green;
+			display: table;
+			padding: 10px 15px;
+			text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+		}
+	}
+	.item-with-icon {
+		vertical-align: top;
+		margin: 30px 0;
+		h4 {
+			font-size: 21px;
+		}
+		div {
+			vertical-align: top;
+			&:first-child {
+				padding-right: 20px;
+			}
+		}
+		img {
+			padding-top: 20px;
+		}
+	}
+	.bg-green {
+		background: @green;
+	}
+	.profitable-block {
+		background:#dbdfe2;
+		padding: 15px 30px;
+		margin: 30px 0;
+		position: relative;
+		&:after {
+			content: '';
+			background: #e9ecee;
+			left: -5px;
+			top: 5px;
+			bottom:-5px;
+			right: 5px;
+			position: absolute;
+			z-index: -1;
+		}
+		h4 {
+			font-size: 21px;
+			.center-block;
+			margin-top:10px;
+			margin-bottom:25px;
+		}
+		.item {
+			margin: 10px 0;
+			&>div {
+				vertical-align: middle;
+				&:first-child {
+					padding-right: 20px; 
+				}
+			}
+		} 
+	}
+	&.bg-map  {
+		padding: 60px 0 50px;
+		.title-green {
+			margin-bottom: 50px;
+		}
+		.item {
+			margin: 20px 0;
+			&>div {
+				&:first-child {
+					padding-right: 20px;
+				}
+			}
+			p {
+				font-size: 18px;
+			}
+		}
+	}
+	.item {
+		&.grey {
+			margin: 20px 0;
+			&>div {
+				vertical-align: middle;
+				&:first-child {
+					padding-right: 20px;
+				}
+			}
+			p {
+				color: #353535;
+				font-size: 15px;
+				margin-bottom: 0;
+			}
+		}
+	}
+	&.grey {
+		padding: 0px 0 60px;
+		.title-green {
+			margin-bottom: 50px;
+		}
+		img {
+			cursor: pointer;
+			margin: 20px 0;
+			  -moz-filter: grayscale(100%);
+			  -ms-filter: grayscale(100%);
+			  -o-filter: grayscale(100%);
+			  filter: grayscale(100%);
+			  //filter: url(grayscale.svg); /* Firefox 4+ */
+			  &:hover,&:focus {
+			  -moz-filter: grayscale(0%);
+			  -ms-filter: grayscale(0%);
+			  -o-filter: grayscale(0%);
+			  filter: grayscale(0%);
+			  }
+		}
+	}
+	.with-c-icon {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.contact-ico {
+		margin-right: 10px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	&.contact-grey {
+		background: @grey;
+		padding: 30px 0;
+		margin-top: 20px;
+		p {
+			font-size: 19px;
+			margin-top: 10px;
+			text-align: center;
+		}
+	}
+	.map {
+		margin-bottom: -5px;
+	}
+} 

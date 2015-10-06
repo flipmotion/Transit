@@ -1,0 +1,163 @@
+.my {
+	&-flex {
+		display: flex;
+	}
+	&-input {
+		border-radius: 0;
+		border-width: 2px;
+		box-shadow: none;
+		border-color: #838383;
+		padding: 10px;
+		&:focus {
+			border-color: @green;
+			color: @green;
+			box-shadow: none;
+		}
+	}
+	&-table {
+		display: table;
+		&>div {
+			display: table-cell;
+		}
+	}
+}
+
+/*validation form style*/
+.has-error,.help-block {
+	ul {
+		font-size: 14px;
+		color: #a94442;
+	}
+}
+/*validation form style END*/
+
+/*titles*/
+.title-green {
+	padding: 10px 25px;
+	color: #fff;
+	display: table;
+	background: @green;
+	&.f-21 {
+		font-size: 21px;
+	}
+	&.f-23 {
+		font-size: 23px;
+	}
+}
+.title-blue {
+	color:#18527e;
+	&.f-24 {
+		font-size: 24px;
+	}
+	&.m-vertical {
+		margin-top: 50px;
+	}
+}
+/*titles end*/
+
+/*btn*/
+.btn-primary {
+	background: @lightblue;
+	color:#fff;
+	border: none;
+	padding: 10px 15px;
+	box-shadow: 0px -3px 0px 0px #225983 inset;
+	font-size: 15px;
+	&.send {
+		.icon {
+			width: 15px;
+			height: 15px;
+			background: url(../img/send-ico.png) center center no-repeat;
+			margin-right: 10px;
+		}
+		
+	}
+	&.with-icon {
+		span {
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+}
+.btn-success {
+
+}
+/*btn end*/
+/*forms*/
+.modal {
+	.modal-content {
+		border-radius: 0;
+		background: @blue;
+	}
+	.modal-dialog {
+		width: 480px;
+	}
+	.close {
+		width: 19px;
+		height: 19px;
+		background: url(../img/close.png) center center no-repeat;
+		&:hover,&:focus {
+			opacity: 1;
+		}
+	}
+}
+.form-send {
+	&.modal-style {
+		.my-input {
+			background: 0 0;
+			color:#fff;
+		}
+		padding: 15px;
+		h3 {
+			color:@green;
+			font-size: 25px;
+			margin-top: 0;
+		}
+		p {
+			margin-bottom: 0;
+			color:#fff;
+		}
+	}
+	&.light-style {
+		background: @grey;
+		padding: 25px;
+		h3 {
+			color:@darkblue;
+			font-size: 25px;
+			margin-top: 0;
+		}
+		.subtitle {
+			color:@darkblue;
+		}
+		p {
+			margin-bottom: 0;
+			color:#363636;
+		}
+	}
+	.btn-success {
+		background: @green;
+		padding: 12px 50px;
+		border: 0;
+		box-shadow: none;
+		border-radius: 0;
+		font-size: 16px;
+		margin-bottom: -10px;
+	}
+}
+.btn-success {
+	background: @green;
+	padding: 12px 50px;
+	border: 0;
+	box-shadow: none;
+	border-radius: 0;
+	font-size: 16px;
+	margin-bottom: -10px;
+}
+/*forms end*/
+.lightblue {
+	color: #18527e;
+}
+.modal {
+	
+}
+
