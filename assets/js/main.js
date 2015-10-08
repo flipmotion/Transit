@@ -2,25 +2,6 @@ $(document).ready(function() {
 	//$('[data-item="phone"]').mask("+7 (999) 999-99-99");
 	send();
 	var form = $('[data-form="send"]');
-	form.ajaxForm(function() { 
-		// $('#call-modal3').modal('hide');
-		// $('#call-modal3').on('hidden.bs.modal', function (e) {
-		// 	$('#thx2').modal('show');
-		// });
-		// //$('#call-modal').modal('hide');
-		// $('#call-modal').on('hidden.bs.modal', function (e) {
-		// 	$('#thx').modal('show');
-		// });
-		// //$('#call-modal2').modal('hide');
-		// $('#call-modal2').on('hidden.bs.modal', function (e) {
-		// 	$('#thx').modal('show');
-		// });
-		
-		// $(form).resetForm(function(){
-		// 	$('#thx').modal('show');
-		// });
-	});
-	var form = $('[data-form="send"]');
 	$(form).validator().on('submit', function (e) {
 		if ($(this).hasClass('disabled')) {
 			// handle the invalid form...
@@ -35,24 +16,14 @@ $(document).ready(function() {
 
 function send(){
 	var form = $('[data-form="send"]');
-	form.ajaxForm(function() {
-		//$('#dog-form').modal('hide');
-		// $('#call-modal3').on('hidden.bs.modal', function (e) {
-		// 	$('#thx2').modal('show');
-		// });
-		// //$('#call-modal').modal('hide');
-		// $('#call-modal').on('hidden.bs.modal', function (e) {
-		// 	$('#thx').modal('show');
-		// });
-		// //$('#call-modal2').modal('hide');
-		// $('#call-modal2').on('hidden.bs.modal', function (e) {
-		// 	$('#thx').modal('show');
-		// });
-		$('#call-modal').modal('hide');
-		$('#call-modal2').modal('hide');
-		$('#call-modal3').modal('hide');
-		$('#thx').modal('show');
-		$(form).resetForm();
+	$(form).validator().on('submit', function (e) {
+		if ($(this).hasClass('disabled')) {
+			// handle the invalid form...
+			e.preventDefault();
+		} else {
+			// everything looks good!
+			send();
+		}
 	});
 }
 function menuTop(){
