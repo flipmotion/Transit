@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$('[data-item="phone"]').mask("+7 (999) 999-99-99");
+	//$('[data-item="phone"]').mask("+7 (999) 999-99-99");
 	send();
 	var form = $('[data-form="send"]');
 	form.ajaxForm(function() { 
