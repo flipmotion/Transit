@@ -1,7 +1,11 @@
 $(document).ready(function() {
 	//$('[data-item="phone"]').mask("+7 (999) 999-99-99");
-	send();
 	var form = $('[data-form="send"]');
+	form.ajaxForm(function() {
+		$('#call').modal('hide');
+		$('#thx').modal('show');
+		$(form).resetForm();
+	});
 	$(form).validator().on('submit', function (e) {
 		if ($(this).hasClass('disabled')) {
 			// handle the invalid form...
@@ -22,7 +26,11 @@ function send(){
 			e.preventDefault();
 		} else {
 			// everything looks good!
-			send();
+			form.ajaxForm(function() {
+				$('#call').modal('hide');
+				$('#thx').modal('show');
+				$(form).resetForm();
+			});
 		}
 	});
 }
